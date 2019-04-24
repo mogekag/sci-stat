@@ -29,6 +29,7 @@ def statistics(querier, regexp, opt):
 
         results = len(querier.articles)
         print('\t[=] Number of results: %s' % results)
+        file.write('Number of results: %s\n\n' % (results))
         
         if results > 0:
             # variables
